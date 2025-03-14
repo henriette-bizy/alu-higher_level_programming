@@ -8,7 +8,10 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """Initialize a new square.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f1687829a3748d861ca00bc849ca9324470e555
         Args:
             size (int): The size of the new square.
         """

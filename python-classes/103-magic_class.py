@@ -9,7 +9,10 @@ class MagicClass:
 
     def __init__(self, radius=0):
         """Initialize a MagicClass.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f1687829a3748d861ca00bc849ca9324470e555
         Arg:
             radius (float or int): The radius of the new MagicClass.
         """

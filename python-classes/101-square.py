@@ -3,11 +3,18 @@
 
 
 class Square:
+<<<<<<< HEAD
     """A class that defines a square."""
 
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a new square.
 
+=======
+    """Represent a square."""
+
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new square.
+>>>>>>> 7f1687829a3748d861ca00bc849ca9324470e555
         Args:
             size (int): The size of the new square.
             position (int, int): The position of the new square.
@@ -17,7 +24,11 @@ class Square:
 
     @property
     def size(self):
+<<<<<<< HEAD
         """property(get&set) for the current size of the square."""
+=======
+        """Get/set the current size of the square."""
+>>>>>>> 7f1687829a3748d861ca00bc849ca9324470e555
         return (self.__size)
 
     @size.setter
@@ -30,7 +41,11 @@ class Square:
 
     @property
     def position(self):
+<<<<<<< HEAD
         """property(get&set) for the current position of the square."""
+=======
+        """Get/set the current position of the square."""
+>>>>>>> 7f1687829a3748d861ca00bc849ca9324470e555
         return (self.__position)
 
     @position.setter
@@ -47,13 +62,18 @@ class Square:
         return (self.__size * self.__size)
 
     def my_print(self):
+<<<<<<< HEAD
         """Prints in stdout the square with the character #."""
+=======
+        """Print the square with the # character."""
+>>>>>>> 7f1687829a3748d861ca00bc849ca9324470e555
         if self.__size == 0:
             print("")
             return
 
         [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
+<<<<<<< HEAD
             [print(" ", end="") for x in range(self.__position[0])]
             [print("#", end="") for y in range(self.__size)]
             print()
@@ -67,4 +87,19 @@ class Square:
             [print("#", end="") for k in range(self.__size)]
             if i != self.__size - 1:
                 print()
+=======
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            print("")
+
+    def __str__(self):
+        """Define the print() representation of a Square."""
+        if self.__size != 0:
+            [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            if i != self.__size - 1:
+                print("")
+>>>>>>> 7f1687829a3748d861ca00bc849ca9324470e555
         return ("")
